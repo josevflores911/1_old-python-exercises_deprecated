@@ -1,0 +1,26 @@
+i=1 #AUXILIAR
+goldpar=88 #TOPE tiene q ser par
+d=0 #CONTADOR
+a=[]
+b=[]
+#llena un vector con los numeros hasta el numero par deseado
+while i<= goldpar:
+  a.append(i)
+  i+=1
+for j in range(len(a)):
+  d=0
+  for k in range(len(a)):
+    c = (a[j])%(a[k])
+    if (c==0):
+      d+=1
+  if (d==2):
+    b.append(a[j])  
+print(a[j],'opale',b)
+
+  #goldpar=100 #numero primo max
+i=0
+y=len(b)-1
+for i in range(len(b)):
+  z = goldpar- b[y] - b[i]
+  if (z==0):
+    print(b[i],b[y])
