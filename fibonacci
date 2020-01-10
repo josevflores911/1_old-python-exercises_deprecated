@@ -1,0 +1,8 @@
+num1 = 0
+num2 = 1
+conta=input("ingrese valor ")  #se lee del usuario con input
+for x in range(int(conta)):
+	num3 = num1 + num2 
+	print("el valor fibonaci e", num3)
+	num1 = num2
+	num2 = num3
